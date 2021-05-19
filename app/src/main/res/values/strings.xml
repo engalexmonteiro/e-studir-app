@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">e-studir</string>
+    <string name="cadastro">Cadastro</string>
+    <string name="login">login</string>
+    <string name="admin_login">admin</string>
+    <string name="admin_pass">admin</string>
+    <string name="senha">senha</string>
+    <string name="curso">Curso</string>
+    <string name="n_o_selecionado">Não selecionado</string>
+    <string name="periodo">Ano/Modulo</string>
+    <string name="Aluno">Aluno</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="OK">ok</string>
+    <string name="dados_do_aluno">Dados do Aluno</string>
+    <string name="modalidade">Modalidade</string>
+    <string name="etapa">Etapa</string>
+    <string name="semana">Semana</string>
+    <string name="estudo_dirigido">Estudo Dirigido</string>
+    <string name="dbName"></string>
+    <string name="registro_salvo">Registro Adicionado</string>
+    <string name="erro_salvar">"Erro ao adicionar "</string>
+    <string name="Cursos">Cursos</string>
+    <string name="Cadastrados">Cadastrados</string>
+    <string name="novo_curso">Novo curso</string>
+    <string name="Cadastro_de_Turma">Cadastro de Turma</string>
+    <string name="alunos">Alunos</string>
+    <string name="disciplina">Disciplina</string>
+    <string name="nome_do_disciplina">Nome do disciplina</string>
+    <string name="Students">Alunos</string>
+    <string name="new_student">Novo Aluno</string>
+    <string name="matricula">Matrícula</string>
+    <string name="number">número</string>
+    <string name="nameStudent">Nome do aluno</string>
+    <string name="name">Nome</string>
+    <string name="year">ano</string>
+    <string name="cod_turma">Código Turma</string>
+    <string name="desc_addstudent">Add student</string>
+    <string name="directoryName">estudir</string>
+    <string name="Adicionar">Adicionar</string>
+    <string name="name_course">Nome do curso</string>
+    <string name="desc_logo">Logomarca e-studir</string>
+    <string name="Classroom">Turmas</string>
+    <string name="Week">Semanas</string>
+    <string name="Year">Ano</string>
+    <string name="estudo_dirigidos">Estudos Dirigidos</string>
+    <string-array name="cursos">
+        <item>Técnico em Informática</item>
+        <item>Técnico em Agropecuária</item>
+        <item>Técnico em Administração</item>
+        <item>Técnico em Meio-ambiente</item>
+    </string-array>
+    <string-array name="modalidades">
+        <item>Integrado</item>
+        <item>Subsequente</item>
+    </string-array>
+    <string-array name="periodo">
+        <item>1º ano/módulo</item>
+        <item>2º ano/módulo</item>
+        <item>3º ano/módulo</item>
+    </string-array>
+
+    <string-array name="alunos">
+        <item>João Teimoso</item>
+        <item>Karla Joelma</item>
+        <item>Tião Batista</item>
+    </string-array>
+    <string-array name="etapa">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="estudo">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="semana">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+</resources>

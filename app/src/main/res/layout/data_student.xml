@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:padding="20dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textAppearance="@style/TextAppearance.Compat.Notification.Title"
+        android:layout_weight="1"
+        android:text="@string/dados_do_aluno" />
+
+    <TextView
+        android:id="@+id/field_curso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/curso" />
+
+    <Spinner
+        android:id="@+id/cursos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:autofillHints="@string/n_o_selecionado"
+        android:prompt="@string/n_o_selecionado" >
+    </Spinner>
+
+    <TextView
+        android:id="@+id/field_modalide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/modalidade" />
+
+    <Spinner
+        android:id="@+id/modalidades"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:prompt="@string/n_o_selecionado" >
+    </Spinner>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/periodo" />
+
+    <Spinner
+        android:id="@+id/periodos"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/n_o_selecionado" >
+    </Spinner>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/Aluno" />
+
+    <AutoCompleteTextView
+        android:id="@+id/alunos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:prompt="@string/n_o_selecionado"/>
+
+
+    <TextView
+        android:id="@+id/etapa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/etapa" />
+
+    <Spinner
+        android:id="@+id/etapas"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/n_o_selecionado" >
+    </Spinner>
+
+    <TextView
+        android:id="@+id/estudo_dirigido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/estudo_dirigido" />
+
+    <Spinner
+        android:id="@+id/estudos_dirigidos"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/n_o_selecionado" >
+    </Spinner>
+
+    <TextView
+        android:id="@+id/semana"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/semana" />
+
+    <Spinner
+        android:id="@+id/semanas"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/n_o_selecionado" >
+    </Spinner>
+
+    </LinearLayout>
+
+</ScrollView>

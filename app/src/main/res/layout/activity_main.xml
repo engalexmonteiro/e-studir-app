@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:stretchColumns="*"
+    tools:context=".MainActivity">
+
+    <TableRow
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/crudCourse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:padding="10dp"
+            android:focusable="true"
+            android:gravity="center_horizontal"
+            android:onClick="menuOption"
+            android:text="@string/Cursos"
+            app:drawableTopCompat="@mipmap/ic_launcher_cursos" />
+
+        <TextView
+            android:id="@+id/crudStudent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="10dp"
+            android:gravity="center_horizontal"
+            android:onClick="menuOption"
+            android:text="@string/alunos"
+            app:drawableTopCompat="@mipmap/ic_launcher_alunos" />
+
+    </TableRow>
+
+
+    <TableRow android:gravity="center">
+        <TextView
+            android:id="@+id/crudClassroom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_horizontal"
+            android:onClick="menuOption"
+            android:text="@string/disciplina"
+            app:drawableTopCompat="@mipmap/ic_launcher_disciplina" />
+
+        <TextView
+            android:id="@+id/crudExercise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_horizontal"
+            android:onClick="menuOption"
+            android:text="@string/estudo_dirigido"
+            app:drawableTopCompat="@mipmap/ic_launcher_edirigido" />
+
+    </TableRow>
+
+</TableLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="0,1"
+    android:layout_margin="10dp"
+    tools:context=".cadUIs.cadExerciseActivity">
+
+    <TextView
+        android:id="@+id/title_students"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:text="@string/estudo_dirigidos" />
+
+    <TextView
+        android:id="@+id/textView_courses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_gravity="start"
+        android:text="@string/Cursos" />
+
+    <Spinner
+        android:id="@+id/spinner_courses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/textView_classroom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_gravity="start"
+        android:text="@string/disciplina" />
+
+    <Spinner
+        android:id="@+id/spinner_classroom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/editText_edirigidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_gravity="start"
+        android:text="@string/estudo_dirigidos" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_weight="1"
+        />
+
+    <TableRow>
+    <TextView
+        android:id="@+id/textView_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_gravity="start"
+        android:text="@string/Year" />
+
+        <TextView
+            android:id="@+id/textView_etapa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_gravity="start"
+            android:text="@string/etapa" />
+    </TableRow>
+
+    <TableRow>
+
+        <Spinner
+            android:id="@+id/spinner_year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+
+        <EditText
+            android:id="@+id/editx_etapa"
+            android:inputType="numberDecimal"
+             />
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/textView_edirigido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_gravity="start"
+            android:text="@string/estudo_dirigido" />
+
+        <TextView
+            android:id="@+id/textView_semanas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_gravity="start"
+            android:text="@string/Week" />
+
+
+    </TableRow>
+
+    <TableRow>
+
+        <EditText
+            android:id="@+id/editx_ediridigo"
+            android:inputType="numberDecimal"
+            />
+
+        <EditText
+            android:id="@+id/editx_semanas"
+            android:inputType="numberDecimal"
+            />
+    </TableRow>
+
+    <Button
+        android:id="@+id/add_edirigido"
+        android:layout_width="wrap_content"
+        android:text="@string/Adicionar"
+        />
+
+
+
+</TableLayout>
