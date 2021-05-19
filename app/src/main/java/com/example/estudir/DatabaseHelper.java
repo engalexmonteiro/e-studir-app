@@ -15,7 +15,7 @@ import java.util.Map;
 public class DatabaseHelper extends SQLiteOpenHelper {
 
     private static final String BANCO_DADOS = "Esdudir";
-    private static final int VERSAO = 3;
+    private static final int VERSAO = 1;
 
     public DatabaseHelper(Context context) {
 
@@ -48,17 +48,18 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 "FOREIGN KEY(aluno_id) REFERENCES aluno(matricula) ON DELETE RESTRICT);");
 
         db.execSQL("CREATE TABLE edirigido (cod_turma TEXT,"+
-                "ano_turma TEXT," +
+                "ano_turma INTEGER," +
                 "etapa INTEGER, " +
                 "edirigido INTEGER," +
                 "semanas INTEGER," +
-                "PRIMARY KEY(disciplina,etapa,edirigido,semanas)," +
+                "PRIMARY KEY(cod_turma,ano_turma,etapa,edirigido,semanas)," +
                 "FOREIGN KEY(cod_turma,ano_turma) REFERENCES disciplina(cod_turma,ano_turma));");
 
         db.execSQL("CREATE TABLE edirigido_week (id_week INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,"+
                         "cod_turma INTEGER,"+
                         "ano_turma INTEGER, " +
                         "edirigido INTEGER," +
+                        "etapa INTEGER," +
                         "semanas INTEGER," +
                         "semana INTEGER," +
                         "date_start DATE," +
@@ -81,6 +82,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             db.execSQL("DROP TABLE IF EXISTS curso");
             db.execSQL("DROP TABLE IF EXISTS disciplina");
             db.execSQL("DROP TABLE IF EXISTS matricula");
+            db.execSQL("DROP TABLE IF EXISTS edirigido");
             onCreate(db);
     }
 
